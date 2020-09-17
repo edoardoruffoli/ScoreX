@@ -1,0 +1,121 @@
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /*per avere le div delle stesse dimensioni */
+  }
+  
+button {
+    border-radius:4px;
+    background-color: rgb(84, 173, 87);
+    color: white;
+    font-size:28px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+ }
+
+button:hover {
+    opacity: 0.8;
+  }
+
+#loginbutton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+#registerbutton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+  
+
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    position: relative;
+  }
+  
+  img.avatar {
+    padding:16px;
+    width: 40%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  /* Add Zoom Animation COPIATO*/
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+  
+.sign_in_error{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    width: 30%; 
+    font-size: 23px;  
+    padding: 6px;
+    padding-bottom: 0;
+    border-radius: 5px; 
+    color: rgb(151, 0, 0);
+    border: 3px solid #e7e7e7; 
+    background-color: #f3f3f3;
+    text-align: center;
+}

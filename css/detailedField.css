@@ -1,0 +1,340 @@
+#detailed_field_tab{
+    background-color:#dfdfdf;
+    margin: 37px;
+    margin-top: 12px;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+#main{
+    height: 25%;
+    margin: 18px;
+    background-color:#f3f3f3;
+    border: 2px solid #b9b9b9; 
+    color: lightslategray;
+}
+
+#main_text{
+    margin-left: 10%;
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;  
+}
+
+#main_text h1{
+    font-size: 35px;
+    color: rgb(24, 19, 19);
+}
+
+#main_text h2{
+    text-align: left;
+    color: rgb(24, 19, 19);
+}
+
+#detailed_poster{
+    width: 195px;
+    height: 135px;
+    margin: 15px;
+    display: inline-block;
+}
+
+#detailed_poster img{
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid #e7e7e7;  
+    border-radius: 5px;
+}
+
+#middle{
+    display: flex;
+    justify-content: center;
+}
+
+.content_field_wrapper{
+    text-align: left;
+    width: 25%;
+    border: 2px solid #b9b9b9; 
+    background-color:#f3f3f3;
+    padding: 20px;
+    padding-left: 0;
+    color: lightslategray;
+    display: block;
+}
+.content_field_wrapper p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.field_info{
+    color: rgb(34, 33, 33);
+    font-size: 20px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+#field_info_maps:hover{
+    color: lightslategray;
+}
+
+#schedule{
+    display: inline-block;
+    width: 50%;
+    text-align: left ;
+    margin-top: 20px;
+}
+
+.field_hours{
+    color: rgb(34, 33, 33);
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.hours{
+    float: right;
+    font-size: 15px;
+}
+
+#last_field_info{
+    vertical-align: top;
+    width: 30%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#booking_form{
+    width: 20%;
+    text-align: left;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    display: block;
+    border: 2px solid #b9b9b9; 
+    background-color:#f3f3f3;
+}
+
+#booking_form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /*per avere le div delle stesse dimensioni */
+}
+
+#booking_form input[number]{
+    width: 40%;
+}
+
+#booking_form label{
+    font-size: 20px;    
+}
+
+#booking_form button{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 3px solid rgb(166, 182, 170);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#booking_form button:hover{
+    background-color: #45a049;
+}
+  
+#booking_error{
+    background-color: rgb(214, 32, 32);
+    border: 1px solid #ccc;
+}
+
+/*RECESIONI*/
+#review_section{
+    padding: 20px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px; 
+    border: 2px solid #b9b9b9; 
+    background-color:#f3f3f3;
+}
+
+.heading{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-right:25px; 
+    padding-top: 20px;   
+    font-size: 35px;
+    display: inline-block;
+}
+
+.rating_field_star{
+    width: 25px;
+    height: 25px;
+    background-image: url(../css/images/uncheckedStar.png);
+    background-size: cover;
+    margin-right: 3px;
+    display:inline-block;
+}
+
+.checked{
+    background-image: url(../css/images/checkedStar.png);
+    background-size: cover;
+}
+
+#averageNumber{
+    float: right;
+    margin: 10px;
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+#totalNumber{
+    text-align: right;
+    width: 96%;    
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #c4c4c4;
+}
+
+#totalNumber:hover{
+    cursor: pointer;
+    color: lightslategrey;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+  
+.middle {
+    margin-top:10px;
+    margin-bottom: 10px;
+    float: left;
+    width: 70%;
+}
+
+.right {
+    text-align: center;
+}
+  
+  /* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #c4c4c4;
+    text-align: center;
+    color: white;
+}
+  
+  /* Individual bars */
+.bar-5 {height: 18px; background-color: #4CAF50;}
+.bar-4 {height: 18px; background-color: #2196F3;}
+.bar-3 {height: 18px; background-color: #00bcd4;}
+.bar-2 {height: 18px; background-color: #ff9800;}
+.bar-1 {height: 18px; background-color: #f44336;}
+
+.bar-5:hover {cursor: pointer; height: 18px; background-color: rgb(138, 233, 141);}
+.bar-4:hover {cursor: pointer; height: 18px; background-color: rgb(138, 197, 245);}
+.bar-3:hover {cursor: pointer; height: 18px; background-color: #95dfe9;}
+.bar-2:hover {cursor: pointer; height: 18px; background-color: #f5c378;}
+.bar-1:hover {cursor: pointer; height: 18px; background-color: #f7928b;}
+
+#ReviewsDashboard{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#ReviewsList{
+    margin-top: 0px;        /*lo settava automaticamente a 14*/
+    margin-bottom: 0px;     /*lo settava automaticamente a 10*/
+    padding-left: 0px;      /*lo settava automaticamente a 40*/
+    list-style: none;
+}
+
+.review_item_wrapper{    
+    height: 250px;
+    margin-top: 20px;
+    border: 2px solid #b9b9b9; 
+    background-color:#f3f3f3;
+}
+
+.rating_review_item{
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.text_review_item{
+    margin-left: 5px;
+    padding: 20px;
+    padding-top: 0;
+    height: 10%;
+}
+
+.text_review_item h3{
+    color: black;
+}
+
+.text_review_item p{
+    color: lightslategrey;
+}
+
+.username_rating{
+    float: right;
+    font-size: 20px;
+}
+
+/*ERROR POP UP*/
+ 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    width: 80%; /* Could be more or less, depending on screen size */
+    margin: 17% auto; 
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    background-color: #fefefe;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  /* The Close Button */
+  .close {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    float: right;
+  }
+  
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

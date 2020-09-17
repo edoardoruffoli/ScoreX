@@ -1,0 +1,495 @@
+/*sideNav*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: lightslategray;
+    display: block;
+  }
+
+  .sidenav a:hover{
+    color: rgb(187, 204, 221);
+  }
+
+  .sidenav .active{
+    color: gainsboro;
+    background-color: #008CBA;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  .menu_item_img{
+      width: 21px;
+      height: 21px;
+      float: left;
+      margin: 10px;
+  } 
+ 
+  .profile_img{
+    background-image: url('./images/profile.png');
+    background-size: cover;
+  }
+  .my_field_img{
+    background-image: url('./images/myfield.png');
+    background-size: cover;
+  }
+  .settings_img{
+    background-image: url('./images/settings.png');
+    background-size: cover;
+  }
+  .add_img{
+    background-image: url('./images/plus.png');
+    background-size: cover;
+  }
+  .timeline_img{
+    background-image: url('./images/clock.png');
+    background-size: cover;
+  }
+  .favorites_img{
+    background-image: url('./images/favorites1.png');
+    background-size: cover;
+  }
+  
+  
+  /*SideMenu non aperto */
+  #sideNavIcon{
+    font-size:30px;
+    cursor:pointer;
+    color:lightslategray;
+    padding: 14px 16px;
+  }
+  #sideNavIcon:hover:not(.active) {
+    background-color: gainsboro;
+  }
+  
+  
+  /*NavigationBar*/
+#navigationBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top:	0;
+    position: sticky;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  .navigationBarList {
+    float: left;
+  }
+  .navigationBarElement {
+    display: block;
+    color:lightslategray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navigationBarElement.active {
+    color: white;
+    background-color: #008CBA;
+  }
+  .navigationBarElement:hover:not(.active) {
+    background-color: gainsboro;
+  }
+
+  /*HISTORY*/
+.header_over_results{
+  height: 31px; 
+  font-size: 23px;  
+  padding: 6px;
+  padding-bottom: 0;
+  margin-left: 40px;
+  margin-top: 15px;
+  border-radius: 5px; 
+  color: rgb(24, 19, 19);
+  border: 3px solid #e7e7e7; 
+  background-color: #f3f3f3;
+  text-align: center;
+  display: inline-block;
+}
+
+.container{
+  width: 48%;
+  display: inline-block;
+}
+.Reviews{
+  float: right;
+}
+#ReviewsAd{
+  margin-right: 20.5%;
+}
+.history_list{
+  	list-style-type: none;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0px; /* in automatico veniva messo = a 40px */
+}
+
+li.item_wrapper{
+    height: 160px;
+    display: list-item;
+    margin-bottom: 20px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    border: 3px solid #e7e7e7;
+}
+
+li.item_wrapper{
+  height: 160px;
+  display: list-item;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  border: 3px solid #e7e7e7;
+}
+
+.detail_booking_item{
+  padding: 10px;
+  padding-top: 0;
+}
+.detail_booking_item a{
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(177, 62, 62);
+  padding-right:20px;
+}
+.detail_booking_item a:hover{
+  color: rgb(126, 126, 126);
+}
+.detail_review_item h4{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 50px;
+  text-align: left;
+  display: inline-block;
+}
+
+.detail_review_item h3{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.detail_review_item .closebtn{
+  margin-right: 5px;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.detail_review_item .closebtn:hover{
+    color: rgb(126, 126, 126);
+}
+
+.detail_review_item .text{
+  margin: 10px;
+  margin-top: 0;
+  height: 60px;
+  overflow-y: auto;
+}
+
+#text p{
+  margin-bottom: 0;
+}
+/*ERROR POP UP*/
+ 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  width: 80%; /* Could be more or less, depending on screen size */
+  margin: 17% auto; 
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  background-color: #fefefe;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  float: right;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Add Your Field*/
+#add_your_field_form{
+  margin: auto;
+  margin-top: 20px;
+  padding: 40px;
+  padding-top: 0px;
+  width: 70%;
+  border: 3px solid #e7e7e7; 
+  border-radius: 5px;
+  background-color: #f3f3f3;
+}
+
+#add_your_field_form .left{
+  width: 60%;
+  display: inline-block;
+  border: 3px solid rgb(18, 19, 18);
+}
+
+#add_your_field_form .right{
+  float: right;
+}
+
+#add_your_field_form h1{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#add_your_field_form h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#add_your_field_form p{
+  margin-top: 0px;
+  text-align: center;
+}
+
+#add_your_field_form input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /*per avere le div delle stesse dimensioni */
+}
+
+.input_box{
+  display: inline-block;
+  width: 42%;
+}
+
+#add_your_field_form .schedule{
+  margin-top: 20px;
+  text-align: left;
+}
+
+#add_your_field_form .scheduleDay{
+  text-align: center;
+  width: 12%;
+  display: inline-block;
+  box-sizing: border-box; /*per avere le div delle stesse dimensioni */
+}
+
+
+#add_your_field_form button{
+  width: 50%;
+  height: 50px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 20px;
+  margin-left: 24%;
+  border: 3px solid rgb(166, 182, 170);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#add_your_field_form button:hover{
+  background-color: #45a049;
+}
+
+#add_your_field_form .warning{
+  background-color: red;
+}
+
+#add_your_field_form .warning:hover{
+  background-color: rgb(211, 35, 35);
+}
+
+/*PROFILE*/
+#profile_section{
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  width: 70%;
+  border: 3px solid #e7e7e7; 
+  border-radius: 5px;
+  background-color:#dfdfdf;
+}
+
+#profile_section .avatar_box{
+  margin: 18px;
+  padding: 15px;
+  background-color:#f3f3f3;
+  border: 2px solid #b9b9b9; 
+}
+
+#profile_section .info_box{
+  vertical-align: top;
+  display: inline-block;
+  padding-left: 40px;
+  margin-right: 15%;
+  box-sizing: border-box;
+  width: 35%;
+  height: 100%;
+}
+
+#profile_section #change_box{
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+#profile_section .bottom_box{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+#profile_section .bottom_box button{
+  margin-top: 0;
+}
+#profile_section #change_box input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /*per avere le div delle stesse dimensioni */
+
+}
+#profile_section #change_box button{
+  padding: 0;
+}
+
+#profile_section h1{
+  margin: 0;
+}
+
+#profile_section a{
+  text-decoration: none;
+  color: black;
+}
+
+#profile_section a:hover{
+  cursor: pointer;
+  color: grey;
+  
+}
+
+#profile_section img{
+  margin: 10px;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+#profile_section #updateIcon{
+  float: none;
+  display: inline-block;
+  margin: 0;
+}
+
+#profile_section button{
+  width: 50%;
+  height: 50px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: 3px solid rgb(166, 182, 170);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+  
+
+
+/*ERROR POP UP*/
+ 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  width: 80%; /* Could be more or less, depending on screen size */
+  margin: 17% auto; 
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  background-color: #fefefe;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  float: right;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

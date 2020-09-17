@@ -1,0 +1,208 @@
+.myFieldTab{
+    background-color:#dfdfdf;
+    margin: 37px;
+    margin-top: 12px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    display: block;
+    overflow: auto;
+}
+
+.top{
+    width: 60%;
+    margin: 20px;
+    margin-left: 20%;
+    text-align: center;
+    background-color:#f3f3f3;
+    border: 2px solid #b9b9b9; 
+    display: inline-block;
+}
+.top a{
+    color: black;
+    text-decoration: none;
+}
+.top a:hover{
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+}
+.updateForm{
+    width: 0;
+}
+
+.updateIcon{
+    width: 35px;
+    height: 35px;
+    margin-top: 50px;
+    margin-right: 11%;
+    background-image: url(../css/images/update.png);
+    background-size: cover;
+    cursor: pointer;
+    float: right;
+}
+
+.updateIcon:hover{
+    background-image: url(../css/images/updateHover.png);
+    background-size: cover;
+}
+
+.middle{
+    text-align: center;
+}
+
+.bookings_dashboard{
+    width: 65%;
+    padding: 20px;
+    padding-top: 0;
+    margin-right: 15px;
+    text-align: left;
+    background-color:#f3f3f3;
+    border: 2px solid #b9b9b9; 
+    display: inline-block;
+}
+
+.bookings_dashboard h2{
+    text-align: center;
+}
+
+.bookings_dashboard table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.bookings_dashboard th{
+    font-size: 20px;   
+}
+
+.bookings_dashboard td, th {
+    width: 25%;
+    border: 3px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.bookings_dashboard .small {
+    width: 15%;
+}
+
+.bookings_dashboard .delete {
+    border: 0;
+    cursor: pointer;
+}
+
+.bookings_dashboard .delete a{
+    text-decoration: none;
+    color: black;
+}
+
+.bookings_dashboard .delete a:hover{
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+}
+
+.bookings_dashboard .emptyCol{
+    border: 0;
+}
+
+.right{
+    float: right;
+    margin-right: 15px;
+    width: 25%;
+    text-align: left;
+    background-color:#f3f3f3;
+    border: 2px solid #b9b9b9; 
+}
+
+/*COME IN DETAILED FIELD*/
+.booking_form{
+    margin-top: 0px;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.booking_form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /*per avere le div delle stesse dimensioni */
+}
+
+.booking_form input[number]{
+    width: 40%;
+}
+
+.booking_form label{
+    font-size: 20px;    
+}
+
+.booking_form p{
+    text-align: center;
+}
+
+.booking_form button{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 3px solid rgb(166, 182, 170);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.booking_form button:hover{
+    background-color: #45a049;
+}
+  
+#booking_error{
+    background-color: rgb(214, 32, 32);
+    border: 1px solid #ccc;
+}
+
+
+/*ERROR POP UP*/
+ 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    width: 80%; /* Could be more or less, depending on screen size */
+    margin: 17% auto; 
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    background-color: #fefefe;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  /* The Close Button */
+  .close {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    float: right;
+  }
+  
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

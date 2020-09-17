@@ -1,0 +1,230 @@
+/* autocomplete list */
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  margin-left: 40%;
+  position: relative;
+  display: inline-block;
+}
+
+button{
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    cursor: pointer;  
+    width: 40px;
+    height: 40px;
+}
+
+#searchButton{ 
+    margin-top: 15px;
+    background-image: url(../css/images/search.png);
+    background-size: cover;
+}
+#searchField{
+    margin-top: 15px;
+    margin-left: 0px;
+    height: 40px;
+    border-radius: 5px; 
+    background-color: #f3f3f3;
+    border: 3px solid #e7e7e7; 
+    font-size: 15px;
+    padding: 6px;
+    vertical-align: top;
+    box-sizing: border-box; 
+}
+/*codice scopiazzato*/
+
+.autocomplete-items {
+    position: absolute;
+    border: 3px solid #e7e7e7; 
+    border-radius: 5px; 
+    background-color: #f3f3f3;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 45px;
+    right: 0;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #e7e7e7;
+}
+.autocomplete-items div:hover {
+    background-color: #f3f3f3;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+    background-color:  #008CBA !important;
+    color: #ffffff;
+}
+
+
+
+
+/*AD LISTS*/
+#adContainer{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px; 
+    border: 3px solid #e7e7e7; 
+    background-color: #f3f3f3;
+}
+.counter{
+    width: 31%;
+    display:inline-block;
+    margin:0;
+    border-left: 3px solid lightslategray; 
+}
+.counter h1{
+    margin: 10px;
+    text-align: center;
+    font-size: 60px;
+    color: mediumaquamarine;
+}
+#counterLeft{
+    border-left: 0px;
+}
+.adquote{
+    text-align: center;
+    font-size: 15px;
+    color: lightslategray;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*search.php*/
+.header_over_results{
+    height: 31px; 
+    width: 23%;
+    font-size: 23px;  
+    padding: 6px;
+    padding-bottom: 0;
+    margin-left: 40px;
+    margin-top: 15px;
+    border-radius: 5px; 
+    color: rgb(24, 19, 19);
+    border: 3px solid #e7e7e7; 
+    background-color: #f3f3f3;
+    text-align: center;
+    display: inline-block;
+}
+#searchBox{
+    width: auto;
+    height: 40px;
+    margin-left: 16%;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    border-radius: 5px; 
+    border: 3px solid #e7e7e7;    
+    background-color: #f3f3f3; 
+    vertical-align: top; 
+    display: inline-block;   
+    box-sizing: border-box;
+}
+#searchByPattern{ 
+    font-size: 15px;  
+    padding: 6px;
+    border: none;
+    background-color: #f3f3f3;
+}
+.sort{
+    background-color: #f3f3f3;
+    border: 3px solid #e7e7e7;   
+    border-radius: 5px;
+    cursor: pointer;  
+    float: right;
+    margin: 15px;
+    margin-right: 40px;
+    padding: 5px;
+}
+.sort select{
+    border: none;
+    background-color: inherit;
+    font-size: inherit;
+}
+
+/*LISTA CAMPI*/
+
+#FieldDashboard{
+    width:auto;
+}
+
+ul.field_list{
+	list-style-type: none;
+    /*text-align: left;*/
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0px; /* in automatico veniva messo = a 40px */
+}
+
+li.field_item_wrapper{
+    height: 160px;
+    display: list-item;
+    margin-bottom: 20px;
+    
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    border: 3px solid #e7e7e7;
+    z-index: 0;
+}
+
+.poster_field_item img{
+    width: 210px;
+    height: 160px;
+    float: left;
+}
+
+.detail_field_item{
+    width: 42%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.detail_field_item a{
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(24, 19, 19);
+}
+.detail_field_item a:hover{
+    color:rgb(107, 96, 96);
+}
+.detail_field_item p{
+    text-align: left;
+    color:lightslategray;
+}
+
+.rating_field_item{
+    width: 20%;
+    margin-right: 20px;
+    display: inline-block; 
+    text-align: center;
+}
+.rating_field_item p{
+    font-size: 20px;
+}
+.rating_field_star{
+    width: 25px;
+    height: 25px;
+    background-image: url(../css/images/uncheckedStar.png);
+    background-size: cover;
+    margin-right: 3px;
+    display:inline-block;
+}
+.checked{
+    background-image: url(../css/images/checkedStar.png);
+    background-size: cover;
+}
+
+

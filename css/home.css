@@ -1,0 +1,54 @@
+#ad_section{
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding:20px;
+    color: rgb(222, 230, 238);
+    text-align:center;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#ad_title{
+  font-size: 40px; 
+}
+.ad_header{
+  font-size: 25px;
+
+}
+
+.ad_parag{
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 15px;
+  width: 40%;
+}
+.ad_box{
+  margin: 10px;
+  padding: 10px;
+  display:inline-block;
+  box-sizing: border-box;
+}
+
+.ad_img{
+  margin-left: auto;
+  margin-right:auto;
+  width: 40px;
+	height: 40px;
+  padding: 10px;
+}
+
+.rocket_img{
+  background-image: url('./images/rocket.png');
+  background-size: cover;
+}
+
+.smile_img{
+  background-image: url('./images/free.png');
+  background-size: cover;
+}
+
+.nocall_img{
+  background-image: url('./images/nocall.png');
+  background-size: cover;
+}
+
+

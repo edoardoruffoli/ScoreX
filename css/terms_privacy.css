@@ -1,0 +1,109 @@
+body{
+	margin: 0;
+	background-color: rgb(54, 70, 93);
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.bar_header{
+	background-color: rgb(54, 70, 93);
+	width: 100%;
+	height: 60px;
+	top: 0px;
+	border-bottom-color: rgb(255, 255, 255);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	display: block;
+	position: fixed;
+	vertical-align: baseline;
+	z-index: 10;
+	text-shadow: 1px 0px 10px rgb(0, 0, 0);
+}
+
+.bar_header a{
+	width: 90px;
+	height: 30px;
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-size: 13px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	display: inline-block;
+	background-color: rgb(82, 158, 204);
+	text-shadow: 1px 0px 10px rgb(23, 69, 204);
+	border-radius: 2px;
+	left: 60%;
+	position: relative;
+}
+
+.bar_header span{
+	width: 250px;
+	height: 30px;
+	margin-top: 10px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: top;
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	text-shadow: 1px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.terms_privacy_content{
+	width: 60%;
+	margin: auto;
+	background-color: rgb(255, 255, 255);
+	position: relative;
+	top: 70px;
+	border-radius: 15px;
+	color: #444;
+	z-index: 1;
+}
+
+.terms_privacy_content div{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.terms_privacy_content h1, hr{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	color: #444;
+}
+
+.terms_privacy_content h1{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-size: 35px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;	c
+}
+
+.terms_privacy_content h2{
+	width: 90%;
+	margin: auto;
+	text-align: justify;
+	padding: 2%;
+	color: #444;
+	font-weight: 500;	
+}
+
+.terms_privacy_content p{
+	width: 90%;
+	margin: auto;
+	text-align: justify;
+	padding: 2%;
+	font-size: 17px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	text-indent: 20px;
+}
